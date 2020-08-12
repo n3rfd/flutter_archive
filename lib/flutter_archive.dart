@@ -112,6 +112,8 @@ class ZipFile {
         'destinationDir': destinationDir.path,
         'reportProgress': reportProgress,
       });
+    } finally {
+      
     }
   }
 }
