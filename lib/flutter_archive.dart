@@ -89,7 +89,7 @@ class ZipFile {
 
   /// Extract [zipFile] to a given [destinationDir]. Optional callback function
   /// [onExtracting] is called before extracting a zip entry.
-  static Future<void> extractToDirectory(
+  Future<void> extractToDirectory(
       {@required File zipFile,
       @required Directory destinationDir,
       OnExtracting onExtracting}) async {
