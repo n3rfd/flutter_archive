@@ -112,10 +112,6 @@ class ZipFile {
         'destinationDir': destinationDir.path,
         'reportProgress': reportProgress,
       });
-    } finally {
-      if (reportProgress) {
-        _channel.setMethodCallHandler(null);
-      }
     }
   }
 }
