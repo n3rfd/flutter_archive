@@ -26,7 +26,7 @@ String _extractOperationToString(ExtractOperation extractOperation) {
 
 /// Utility class for creating and extracting zip archive files.
 class ZipFile {
-  static const MethodChannel _channel = MethodChannel('flutter_archive');
+  const MethodChannel _channel = MethodChannel('flutter_archive');
 
   /// Compress and save all files in [sourceDir] to [zipFile].
   ///
